@@ -14,15 +14,8 @@ a {
 }
 
 main {
-  height: 200vh;
-}
-
-main p {
-  font-family: "Fira Code", monospace;
-  font-size: 16pt;
-  text-align: center;
 }
 
 .container {
-  height: 100vh;
+  height: 200vh;
 }

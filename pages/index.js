@@ -1,5 +1,6 @@
 import Head from "next/head";
 import NavBar from "@components/NavBar";
+import ComingSoon from "@components/ComingSoon";
 
 export default function Home() {
   return (
@@ -14,40 +15,7 @@ export default function Home() {
         />
       </Head>
       <NavBar />
-      <main>
-        <p>coming soon</p>
-        <p>coming soon</p>
-        <p>coming soon</p>
-        <p>coming soon</p>
-        <p>coming soon</p>
-        <p>coming soon</p>
-        <p>coming soon</p>
-        <p>coming soon</p>
-        <p>coming soon</p>
-        <p>coming soon</p>
-        <p>coming soon</p>
-        <p>coming soon</p>
-        <p>coming soon</p>
-        <p>coming soon</p>
-        <p>coming soon</p>
-        <p>coming soon</p>
-        <p>coming soon</p>
-        <p>coming soon</p>
-        <p>coming soon</p>
-        <p>coming soon</p>
-        <p>coming soon</p>
-        <p>coming soon</p>
-        <p>coming soon</p>
-        <p>coming soon</p>
-        <p>coming soon</p>
-        <p>coming soon</p>
-        <p>coming soon</p>
-        <p>coming soon</p>
-        <p>coming soon</p>
-        <p>coming soon</p>
-        <p>coming soon</p>
-        <p>coming soon</p>
-      </main>
+      <ComingSoon />
     </div>
   );
 }
