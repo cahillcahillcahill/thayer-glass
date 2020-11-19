@@ -1,6 +1,5 @@
 import Head from "next/head";
-import Header from "@components/Header";
-import Footer from "@components/Footer";
+import NavBar from "@components/NavBar";
 
 export default function Home() {
   return (
@@ -14,11 +13,41 @@ export default function Home() {
           rel="stylesheet"
         />
       </Head>
-
+      <NavBar />
       <main>
-        <Header title="Jon Thayer Stained Glass Studio" />
+        <p>coming soon</p>
+        <p>coming soon</p>
+        <p>coming soon</p>
+        <p>coming soon</p>
+        <p>coming soon</p>
+        <p>coming soon</p>
+        <p>coming soon</p>
+        <p>coming soon</p>
+        <p>coming soon</p>
+        <p>coming soon</p>
+        <p>coming soon</p>
+        <p>coming soon</p>
+        <p>coming soon</p>
+        <p>coming soon</p>
+        <p>coming soon</p>
+        <p>coming soon</p>
+        <p>coming soon</p>
+        <p>coming soon</p>
+        <p>coming soon</p>
+        <p>coming soon</p>
+        <p>coming soon</p>
+        <p>coming soon</p>
+        <p>coming soon</p>
+        <p>coming soon</p>
+        <p>coming soon</p>
+        <p>coming soon</p>
+        <p>coming soon</p>
+        <p>coming soon</p>
+        <p>coming soon</p>
+        <p>coming soon</p>
+        <p>coming soon</p>
+        <p>coming soon</p>
       </main>
-      <Footer />
     </div>
   );
 }
