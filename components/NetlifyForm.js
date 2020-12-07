@@ -201,7 +201,8 @@ const FormMessage = styled.p`
 
 export default function NetlifyForm() {
   return (
-    <Form name="contact" method="POST" data-netlify="true">
+    <Form name="contact" method="POST" data-netlify="true" action="/contact">
+      <input type="hidden" name="form-name" value="contact" />
       <FormMessage>
         Get in touch for commissions or to say hello. I’m happy to answer any
         questions.
