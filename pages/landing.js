@@ -1,5 +1,5 @@
 import Head from "next/head";
-import styles from "./Landing.module.css";
+import styles from "./landing.module.css";
 import Image from "next/image";
 import Copyright from "@components/Copyright";
 
