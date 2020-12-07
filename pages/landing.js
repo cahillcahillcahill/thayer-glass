@@ -10,7 +10,7 @@ export default function Landing() {
       <div className={styles["images-container"]}>
         <div className={styles["image-container"]}>
           <Image
-            src="/images/mitchell-luo-XQM6QgFIezg-unsplash.jpg"
+            src="/mitchell-luo-XQM6QgFIezg-unsplash.jpg"
             alt="Stained Glass"
             width={480}
             height={380}
@@ -19,7 +19,7 @@ export default function Landing() {
         </div>
         <div className={styles["image-container"]}>
           <Image
-            src="/images/marie-bellando-mitjans-qAh_tS-vdOU-unsplash.jpg"
+            src="/marie-bellando-mitjans-qAh_tS-vdOU-unsplash.jpg"
             alt="Stained Glass"
             width={480}
             height={380}
@@ -28,7 +28,7 @@ export default function Landing() {
         </div>
         <div className={styles["image-container"]}>
           <Image
-            src="/images/ant-rozetsky-u93RuS6IJGk-unsplash.jpg"
+            src="/ant-rozetsky-u93RuS6IJGk-unsplash.jpg"
             alt="Stained Glass"
             width={480}
             height={380}
