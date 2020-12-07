@@ -30,8 +30,8 @@ const NavBar = () => {
       }
     >
       <div className={styles.links}>
-        <Link href="">contact</Link>
-        <Link href="">about</Link>
+        <Link href="/contact">contact</Link>
+        <Link href="/about">about</Link>
         <a className={styles.instagram} href="">
           <IgIcon />
         </a>

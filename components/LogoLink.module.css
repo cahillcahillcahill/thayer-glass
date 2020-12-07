@@ -1,27 +1,22 @@
 .logo-link {
-  padding: 20px 110px 0px 0px;
   font-family: "Poppins", sans-serif;
-  font-size: 56px;
+  font-size: calc(6px + 4vw);
   font-weight: 400;
 }
 
 @media screen and (max-width: 1130px) {
   .logo-link {
-    font-size: 32pt;
-    padding: 35px 130px 0px 0px;
   }
 }
 
 @media screen and (max-width: 1025px) {
   .logo-link {
-    font-size: 28pt;
-    padding: 36px 130px 0px 0px;
   }
 }
 
 @media screen and (max-width: 875px) {
   .logo-link {
-    font-size: calc(1em + 3.15vw);
+    font-size: 2.5rem;
     text-align: center;
     padding: 10px;
   }

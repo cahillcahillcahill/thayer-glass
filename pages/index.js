@@ -1,6 +1,6 @@
 import Head from "next/head";
 import NavBar from "@components/NavBar";
-import ComingSoon from "@components/ComingSoon";
+import Landing from "./landing";
 
 export default function Home() {
   return (
@@ -15,7 +15,7 @@ export default function Home() {
         />
       </Head>
       <NavBar />
-      <ComingSoon />
+      <Landing />
     </div>
   );
 }
