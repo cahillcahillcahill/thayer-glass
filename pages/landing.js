@@ -2,6 +2,7 @@ import Head from "next/head";
 import styles from "./landing.module.css";
 import Image from "next/image";
 import Copyright from "@components/Copyright";
+import NetlifySmallForm from "@components/NetlifySmallForm";
 
 export default function Landing() {
   return (
@@ -39,10 +40,11 @@ export default function Landing() {
       <p>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
         tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-        veniam, sed do eiusmod tempor incididunt ut labore et. Let’s get in
-        touch.
+        veniam, sed do eiusmod tempor incididunt ut labore et. Incididunt ut
+        labore et dolore magna aliqua.
       </p>
-      <div className={styles["sign-up-container"]}></div>
+      {/* <div className={styles["sign-up-container"]}></div> */}
+      <NetlifySmallForm />
       <Copyright />
     </div>
   );

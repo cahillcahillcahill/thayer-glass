@@ -3,6 +3,7 @@ import NavBar from "@components/NavBar";
 import Copyright from "@components/Copyright";
 import NetlifyForm from "@components/NetlifyForm";
 import styled from "styled-components";
+import { Map } from "@components/Map";
 
 const mainFont = '"Fira Code", monospace;';
 
@@ -28,7 +29,7 @@ const ContactContainer = styled.div`
 
 const FormContainer = styled.div`
   grid-area: 1 / 1 / 7 / 2;
-  margin: 0rem 4rem 5rem 4rem;
+  margin: 1rem 4rem 5rem 4rem;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -48,19 +49,18 @@ const FormContainer = styled.div`
 
 const MapContainer = styled.div`
   grid-area: 3 / 2 / 6 / 3;
-  background-color: #b9fdbb;
   margin: 0rem 4rem 0rem 0rem;
   text-align: center;
 
   @media (max-width: 1227px) {
     width: 60%;
-    height: 25rem;
+    height: 500px;
     margin-left: 20%;
   }
   @media (max-width: 875px) {
     margin: 2rem 1rem;
     width: 80vw;
-    height: 20rem;
+    height: 400px;
   }
 `;
 
@@ -132,15 +132,7 @@ export default function Contact() {
           <span>Iowa City, IA 54555</span>
         </Address>
         <MapContainer>
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
-          GOOGLE MAPS
+          <Map />
         </MapContainer>
       </ContactContainer>
       <Copyright />
