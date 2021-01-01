@@ -109,7 +109,7 @@ export default function NetlifySmallForm() {
     <Form name="signup" method="POST" data-netlify="true">
       <input type="hidden" name="form-name" value="signup" />
       <Label>
-        Let's keep in touch. Sign up for my (occassional) newsletter here.
+        Let's keep in touch. Sign up for my (occasional) newsletter here.
         <input type="email" name="email" placeholder="Email Address" />
       </Label>
       <Controls>

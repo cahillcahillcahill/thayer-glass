@@ -224,7 +224,7 @@ export default function NetlifyForm() {
       <Controls>
         <input type="checkbox" name="checkbox" />
         <div>
-          Sign me up for the <br /> occassional newsletter
+          Sign me up for the <br /> occasional newsletter
         </div>
         <button type="submit">Send</button>
       </Controls>
