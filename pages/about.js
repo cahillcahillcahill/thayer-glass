@@ -1,5 +1,6 @@
 import Head from "next/head";
-import Image from "next/image";
+// Next image component is not working right now
+// import Image from "next/image";
 import NavBar from "@components/NavBar";
 import Copyright from "@components/Copyright";
 import styled from "styled-components";
@@ -12,38 +13,36 @@ const AboutContainer = styled.div`
 
 const AboutGrid = styled.div`
   font-family: "Fira Code", monospace;
-  width: 1200px;
-  height: 135vh;
-  margin: 30px;
+  width: 80%;
+  height: 151vh;
+  padding-top: 30px;
   display: grid;
   grid-template-columns: repeat(6, 1fr);
   grid-template-rows: repeat(11, 1fr);
-  grid-column-gap: 20px;
+  grid-column-gap: 15px;
   grid-row-gap: 20px;
-  @media (max-width: 945px) {
+  @media (max-width: 1245px) {
     grid-template-rows: repeat(14, 1fr);
     height: 175vh;
     grid-row-gap: 10px;
   }
 
-  @media (max-width: 840px) {
+  @media (max-width: 960px) {
     display: flex;
     flex-direction: column;
-    width: 90%;
     align-content: center;
   }
 `;
 
 const Img1 = styled.div`
   grid-area: 1 / 4 / 5 / 7;
-  display: flex;
-  justify-content: flex-end;
-  @media (max-width: 945px) {
-    margin-top: 30px;
-    align-content: center;
-    justify-content: center;
+  /* src: "/mitchell-luo-XQM6QgFIezg-unsplash.jpg";
+   */
+  /* alt: "Stained Glass"; */
+  background-color: blue;
+  @media (max-width: 1245px) {
   }
-  @media (max-width: 840px) {
+  @media (max-width: 960px) {
     margin-top: 10px;
     width: 90%;
     align-self: center;
@@ -56,27 +55,35 @@ const Text1 = styled.div`
   flex-direction: column;
   justify-content: center;
   align-content: center;
+  line-height: 25px;
 
-  @media (max-width: 1040px) {
+  @media (max-width: 1430px) {
+    line-height: 23px;
+  }
+  @media (max-width: 1360px) {
+    line-height: 22px;
+  }
+  @media (max-width: 1245px) {
+    line-height: 21px;
     font-size: 14px;
   }
 `;
 
 const Text2 = styled.div`
   grid-area: 8 / 1 / 9 / 7;
+  padding: 15px 0px;
 `;
-//Three imgs are replaced with Two imgs at max-width 945px
+//Three imgs are responsively replaced with Two imgs
 const ThreeImgs1 = styled.div`
   grid-area: 5 / 1 / 8 / 7;
   display: flex;
-  column-gap: 10px;
+  column-gap: 5px;
   justify-content: space-between;
-  align-content: flex-end;
 
   @media (max-width: 1040px) {
     margin-top: 20px;
   }
-  @media (max-width: 945px) {
+  @media (max-width: 1245px) {
     display: none;
   }
 `;
@@ -90,37 +97,33 @@ const ThreeImgs2 = styled.div`
   @media (max-width: 1040px) {
     margin-bottom: 20px;
   }
-  @media (max-width: 945px) {
+  @media (max-width: 1245px) {
     display: none;
   }
 `;
 
 const TwoImgs1 = styled.div`
   display: none;
-  @media (max-width: 945px) {
-    grid-area: 5 / 1 / 8 / 7;
+  @media (max-width: 1245px) {
+    grid-area: 5 / 1 / 9 / 7;
     display: flex;
-    column-gap: 10px;
     justify-content: space-between;
   }
-  @media (max-width: 700px) {
+  @media (max-width: 960px) {
     flex-direction: column;
-    width: 90%;
     row-gap: 10px;
-    justify-content: center;
-    align-self: center;
   }
 `;
 
 const TwoImgs2 = styled.div`
   display: none;
-  @media (max-width: 945px) {
+  @media (max-width: 1245px) {
     grid-area: 9 / 1 / 12 / 7;
     display: flex;
     column-gap: 10px;
-    justify-content: space-between;
+    justify-content: center;
   }
-  @media (max-width: 700px) {
+  @media (max-width: 960px) {
     flex-direction: column;
     width: 90%;
     row-gap: 10px;
@@ -130,13 +133,13 @@ const TwoImgs2 = styled.div`
 
 const TwoImgs3 = styled.div`
   display: none;
-  @media (max-width: 945px) {
+  @media (max-width: 1245px) {
     grid-area: 12 / 1 / 15 / 7;
     display: flex;
     column-gap: 10px;
-    justify-content: space-between;
+    justify-content: center;
   }
-  @media (max-width: 700px) {
+  @media (max-width: 960px) {
     flex-direction: column;
     width: 90%;
     row-gap: 10px;
@@ -144,19 +147,21 @@ const TwoImgs3 = styled.div`
   }
 `;
 
-const SmallImage = styled(Image).attrs((props) => ({
+const SmallImage = styled.img.attrs((props) => ({
   src: props.src,
   alt: "Stained Glass Image. Filename is" + props.src,
-  width: 370,
-  height: 300,
-}))``;
+}))`
+  width: 32%;
+  height: 280px;
+`;
 
-const MedImage = styled(Image).attrs((props) => ({
+const MedImage = styled.img.attrs((props) => ({
   src: props.src,
   alt: "Stained Glass Image. Filename is" + props.src,
-  width: 425,
-  height: 350,
-}))``;
+}))`
+  width: 49%;
+  height: 30vw;
+`;
 
 export default function About() {
   return (
@@ -190,14 +195,7 @@ export default function About() {
               qui exercitation ad anim cillum anim qui labore id et id quis.
             </p>
           </Text1>
-          <Img1>
-            <Image
-              src="/mitchell-luo-XQM6QgFIezg-unsplash.jpg"
-              alt="Stained Glass"
-              width={550}
-              height={350}
-            />
-          </Img1>
+          <Img1 />
           <ThreeImgs1>
             <SmallImage src="/mitchell-luo-XQM6QgFIezg-unsplash.jpg" />
             <SmallImage src="/mitchell-luo-XQM6QgFIezg-unsplash.jpg" />

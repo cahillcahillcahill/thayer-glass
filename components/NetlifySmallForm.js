@@ -3,9 +3,8 @@ const mainFont = '"Fira Code", monospace;';
 
 const Form = styled.form`
   width: 40rem;
-  @media (max-width: 1227px) {
-    width: 16rem;
-    margin: 3rem;
+  @media (max-width: 825px) {
+    width: 100%;
   }
 `;
 
@@ -15,7 +14,7 @@ const Label = styled.label`
   font-family: ${mainFont};
   font-weight: 500;
   font-size: 16px;
-  margin-top: 20px;
+  margin-top: 15px;
   text-align: center;
 
   input {
