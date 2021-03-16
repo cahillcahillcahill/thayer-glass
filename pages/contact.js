@@ -119,17 +119,17 @@ export default function Contact() {
         </FormContainer>
         <PhoneAndEmail>
           <div>
-            <span>Phone:</span> 555-555-5555
+            <span>Phone:</span> (319) 338-5595
           </div>
           <div>
-            <span>Email:</span> jonthayer@gmail.com
+            <span>Email:</span> thayerglassstudio@gmail.com
           </div>
           <br />
         </PhoneAndEmail>
         <Address>
-          <span>555 Glass Ln Suite 405</span>
+          <span>1805 Stevens Dr</span>
           <br />
-          <span>Iowa City, IA 54555</span>
+          <span>Iowa City, IA 52240</span>
         </Address>
         <MapContainer>
           <Map />

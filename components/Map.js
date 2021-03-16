@@ -5,8 +5,8 @@ import { useState } from "react";
 
 export const Map = () => {
   const [location, setLocation] = useState({
-    lat: 41.656856,
-    lng: -91.531675,
+    lat: 41.642508328691854,
+    lng: -91.53495755506006,
   });
 
   return (

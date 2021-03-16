@@ -29,50 +29,31 @@ const LandingPage = styled.div`
 `;
 
 const Image = styled.img`
-  width: 100%;
-  height: 22vw;
+  width: auto;
+  height: 23vw;
   alt: "Stained Glass";
+
+  @media screen and (max-width: 1300px) {
+    height: 26vw;
+  }
 
   @media screen and (max-width: 1175px) {
     height: 30vw;
   }
 
   @media screen and (max-width: 825px) {
-    width: 450px;
-    height: 350px;
+    /* width: 450px; */
+    height: 400px;
   }
 `;
 
 const ImagesContainer = styled.div`
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: 1fr;
-  grid-column-gap: 10px;
-  grid-row-gap: 0px;
-  width: 100%;
-
-  & img:nth-child(1) {
-    grid-area: 1 / 1 / 2 / 2;
-  }
-  & img:nth-child(2) {
-    grid-area: 1 / 2 / 2 / 3;
-  }
-  & img:nth-child(3) {
-    grid-area: 1 / 3 / 2 / 4;
-  }
+  display: flex;
+  justify-content: space-around;
+  column-gap: 10px;
+  width: 75%;
 
   @media screen and (max-width: 1175px) {
-    grid-template-columns: repeat(2, 1fr);
-
-    & img:nth-child(1) {
-      display: none;
-    }
-    & img:nth-child(2) {
-      grid-area: 1 / 1 / 2 / 2;
-    }
-    & img:nth-child(3) {
-      grid-area: 1 / 2 / 2 / 3;
-    }
   }
 
   @media screen and (max-width: 825px) {
@@ -96,15 +77,16 @@ export default function Landing() {
     <LandingPage>
       <Head></Head>
       <ImagesContainer>
-        <Image src="/mitchell-luo-XQM6QgFIezg-unsplash.jpg" />
-        <Image src="/marie-bellando-mitjans-qAh_tS-vdOU-unsplash.jpg" />
-        <Image src="/ant-rozetsky-u93RuS6IJGk-unsplash.jpg" />
+        <Image src="/img016_edited.jpg" />
+        <Image src="/triangle.jpg" />
+        <Image src="/img017_edited2.jpg" />
       </ImagesContainer>
       <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-        veniam, sed do eiusmod tempor incididunt ut labore et. Incididunt ut
-        labore et dolore magna aliqua.
+        Professional, creative stained glass studio since 1977 specializing in
+        custom and original design, repair and historic restoration. Call{" "}
+        <span style={{ fontWeight: "bold" }}>(319) 338-5595</span> or email{" "}
+        <span style={{ fontWeight: "bold" }}>thayerglassstudio@gmail.com</span>{" "}
+        for inquiries and appointments.
       </p>
       <NetlifySmallForm />
       <Copyright />
