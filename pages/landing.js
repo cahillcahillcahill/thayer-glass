@@ -79,14 +79,14 @@ export default function Landing() {
       <Head></Head>
       <ImagesContainer>
         <Image
-          src="/img016_edited.jpg"
+          src="/img016_edited2.jpg"
           width={275}
           height={375}
           priority={true}
         />
-        <Image src="/triangle.jpg" width={425} height={375} priority={true} />
+        <Image src="/triangle2.jpg" width={425} height={375} priority={true} />
         <Image
-          src="/img017_edited2.jpg"
+          src="/img017_edited4.jpg"
           width={275}
           height={375}
           priority={true}
