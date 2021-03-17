@@ -1,6 +1,5 @@
 import Head from "next/head";
-//The next image component isn't working right now
-// import Image from "next/image";
+import Image from "next/image";
 import styled from "styled-components";
 import Copyright from "@components/Copyright";
 import NetlifySmallForm from "@components/NetlifySmallForm";
@@ -28,30 +27,32 @@ const LandingPage = styled.div`
   }
 `;
 
-const Image = styled.img`
-  width: auto;
-  height: 23vw;
-  alt: "Stained Glass";
-
-  @media screen and (max-width: 1300px) {
-    height: 26vw;
-  }
-
-  @media screen and (max-width: 1175px) {
-    height: 30vw;
-  }
-
-  @media screen and (max-width: 825px) {
-    /* width: 450px; */
-    height: 400px;
-  }
-`;
-
 const ImagesContainer = styled.div`
   display: flex;
   justify-content: space-around;
   column-gap: 10px;
-  width: 75%;
+
+  & div img {
+    @media screen and (max-width: 1300px) {
+      height: 26vw;
+    }
+
+    @media screen and (max-width: 1175px) {
+      height: 29vw;
+    }
+
+    @media screen and (max-width: 1060px) {
+      height: 32vw;
+    }
+
+    @media screen and (max-width: 825px) {
+      height: 400px;
+    }
+  }
+
+  & div:nth-child(3) {
+    transform: rotate(0.25deg);
+  }
 
   @media screen and (max-width: 1175px) {
   }
@@ -77,9 +78,9 @@ export default function Landing() {
     <LandingPage>
       <Head></Head>
       <ImagesContainer>
-        <Image src="/img016_edited.jpg" />
-        <Image src="/triangle.jpg" />
-        <Image src="/img017_edited2.jpg" />
+        <Image src="/img016_edited.jpg" width={275} height={375} />
+        <Image src="/triangle.jpg" width={425} height={375} />
+        <Image src="/img017_edited2.jpg" width={275} height={375} />
       </ImagesContainer>
       <p>
         Professional, creative stained glass studio since 1977 specializing in
