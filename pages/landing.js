@@ -78,9 +78,19 @@ export default function Landing() {
     <LandingPage>
       <Head></Head>
       <ImagesContainer>
-        <Image src="/img016_edited.jpg" width={275} height={375} />
-        <Image src="/triangle.jpg" width={425} height={375} />
-        <Image src="/img017_edited2.jpg" width={275} height={375} />
+        <Image
+          src="/img016_edited.jpg"
+          width={275}
+          height={375}
+          priority={true}
+        />
+        <Image src="/triangle.jpg" width={425} height={375} priority={true} />
+        <Image
+          src="/img017_edited2.jpg"
+          width={275}
+          height={375}
+          priority={true}
+        />
       </ImagesContainer>
       <p>
         Professional, creative stained glass studio since 1977 specializing in
