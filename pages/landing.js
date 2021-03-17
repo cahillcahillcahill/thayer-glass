@@ -75,32 +75,47 @@ const ImagesContainer = styled.div`
 
 export default function Landing() {
   return (
-    <LandingPage>
-      <Head></Head>
-      <ImagesContainer>
-        <Image
-          src="/img016_edited2.jpg"
-          width={275}
-          height={375}
-          priority={true}
-        />
-        <Image src="/triangle2.jpg" width={425} height={375} priority={true} />
-        <Image
-          src="/img017_edited4.jpg"
-          width={275}
-          height={375}
-          priority={true}
-        />
-      </ImagesContainer>
-      <p>
-        Professional, creative stained glass studio since 1977 specializing in
-        custom and original design, repair and historic restoration. Call{" "}
-        <span style={{ fontWeight: "bold" }}>(319) 338-5595</span> or email{" "}
-        <span style={{ fontWeight: "bold" }}>thayerglassstudio@gmail.com</span>{" "}
-        for inquiries and appointments.
-      </p>
-      <NetlifySmallForm />
-      <Copyright />
-    </LandingPage>
+    <>
+      <Image
+        src="/img016_edited2.jpg"
+        width={275}
+        height={375}
+        priority={true}
+      />
+      <LandingPage>
+        <Head></Head>
+        <ImagesContainer>
+          <Image
+            src="/img016_edited2.jpg"
+            width={275}
+            height={375}
+            priority={true}
+          />
+          <Image
+            src="/triangle2.jpg"
+            width={425}
+            height={375}
+            priority={true}
+          />
+          <Image
+            src="/img017_edited4.jpg"
+            width={275}
+            height={375}
+            priority={true}
+          />
+        </ImagesContainer>
+        <p>
+          Professional, creative stained glass studio since 1977 specializing in
+          custom and original design, repair and historic restoration. Call{" "}
+          <span style={{ fontWeight: "bold" }}>(319) 338-5595</span> or email{" "}
+          <span style={{ fontWeight: "bold" }}>
+            thayerglassstudio@gmail.com
+          </span>{" "}
+          for inquiries and appointments.
+        </p>
+        <NetlifySmallForm />
+        <Copyright />
+      </LandingPage>
+    </>
   );
 }
