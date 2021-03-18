@@ -78,6 +78,7 @@ export default function Landing() {
     <LandingPage>
       <Head></Head>
       <ImagesContainer>
+        <img src="/img016_edited2.jpg" width="40px" height="40px"></img>
         <Image
           src="/img016_edited2.jpg"
           width={275}
