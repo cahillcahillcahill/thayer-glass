@@ -1,4 +1,5 @@
 import { createGlobalStyle, ThemeProvider } from "styled-components";
+import Image from "next/image";
 
 const GlobalStyle = createGlobalStyle`
 html,

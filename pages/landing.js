@@ -78,15 +78,15 @@ export default function Landing() {
     <LandingPage>
       <Head></Head>
       <ImagesContainer>
-        <Image
-          src="/img016_edited2.jpg"
+        <img
+          src="/img016_edited.jpg"
           width={275}
           height={375}
           priority={true}
         />
-        <Image src="/triangle2.jpg" width={425} height={375} priority={true} />
-        <Image
-          src="/img017_edited4.jpg"
+        <img src="/triangle2.jpg" width={425} height={375} priority={true} />
+        <img
+          src="/img017_edited2.jpg"
           width={275}
           height={375}
           priority={true}

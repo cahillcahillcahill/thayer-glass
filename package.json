@@ -15,7 +15,8 @@
     "next-plugin-svgr": "0.0.6",
     "react": "17.0.1",
     "react-dom": "17.0.1",
-    "styled-components": "^5.2.1"
+    "styled-components": "^5.2.1",
+    "babel-plugin-styled-components": "^1.12.0"
   },
   "devDependencies": {
     "@iconify/react": "^2.0.0-rc.3",
