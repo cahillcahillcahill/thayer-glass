@@ -1,10 +1,9 @@
 import Head from "next/head";
-import NavBar from "@components/NavBar";
 import Landing from "./landing";
 
 export default function Home() {
   return (
-    <div className="container">
+    <>
       <Head>
         <title>Thayer Glass Studio</title>
         <link rel="icon" href="/favicon.ico" />
@@ -14,8 +13,7 @@ export default function Home() {
           rel="stylesheet"
         />
       </Head>
-      <NavBar />
       <Landing />
-    </div>
+    </>
   );
 }

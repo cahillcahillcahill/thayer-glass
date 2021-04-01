@@ -8,6 +8,11 @@ const Form = styled.form`
     width: 30rem;
     margin: 3rem;
   }
+
+  @media (max-width: 550px) {
+    width: 30rem;
+    margin: 0;
+  }
 `;
 
 const Label = styled.label`

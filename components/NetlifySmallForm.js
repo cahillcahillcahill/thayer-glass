@@ -4,7 +4,10 @@ const mainFont = '"Fira Code", monospace;';
 const Form = styled.form`
   width: 40rem;
   @media (max-width: 825px) {
-    width: 100%;
+    width: 70vw;
+  }
+  @media (max-width: 400px) {
+    width: 90vw;
   }
 `;
 
