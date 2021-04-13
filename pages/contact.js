@@ -1,7 +1,4 @@
 import Head from "next/head";
-import PageContainer from "@components/PageContainer";
-import NavBar from "@components/NavBar";
-import Copyright from "@components/Copyright";
 import NetlifyForm from "@components/NetlifyForm";
 import styled from "styled-components";
 import { Map } from "@components/Map";
@@ -108,41 +105,37 @@ const Address = styled.div`
 export default function Contact() {
   return (
     <>
-      <NavBar />
-      <PageContainer>
-        <Head>
-          <title>Thayer Glass Studio</title>
-          <link rel="icon" href="/favicon.ico" />
-          <link rel="preconnect" href="https://fonts.gstatic.com" />
-          <link
-            href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500&family=Poppins:ital,wght@0,200;0,300;0,400;0,500;1,200&display=swap"
-            rel="stylesheet"
-          />
-        </Head>
-        <ContactContainer>
-          <FormContainer>
-            <NetlifyForm />
-          </FormContainer>
-          <PhoneAndEmail>
-            <div>
-              <span>Phone:</span> (319) 338-5595
-            </div>
-            <div>
-              <span>Email:</span> thayerglassstudio@gmail.com
-            </div>
-            <br />
-          </PhoneAndEmail>
-          <Address>
-            <span>1805 Stevens Dr</span>
-            <br />
-            <span>Iowa City, IA 52240</span>
-          </Address>
-          <MapContainer>
-            <Map />
-          </MapContainer>
-        </ContactContainer>
-        <Copyright />
-      </PageContainer>
+      <Head>
+        <title>Thayer Glass Studio</title>
+        <link rel="icon" href="/favicon.ico" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" />
+        <link
+          href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500&family=Poppins:ital,wght@0,200;0,300;0,400;0,500;1,200&display=swap"
+          rel="stylesheet"
+        />
+      </Head>
+      <ContactContainer>
+        <FormContainer>
+          <NetlifyForm />
+        </FormContainer>
+        <PhoneAndEmail>
+          <div>
+            <span>Phone:</span> (319) 338-5595
+          </div>
+          <div>
+            <span>Email:</span> thayerglassstudio@gmail.com
+          </div>
+          <br />
+        </PhoneAndEmail>
+        <Address>
+          <span>1805 Stevens Dr</span>
+          <br />
+          <span>Iowa City, IA 52240</span>
+        </Address>
+        <MapContainer>
+          <Map />
+        </MapContainer>
+      </ContactContainer>
     </>
   );
 }

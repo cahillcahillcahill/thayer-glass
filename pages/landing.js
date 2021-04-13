@@ -103,26 +103,20 @@ const ImagesContainer = styled.div`
 export default function Landing() {
   return (
     <>
-      <NavBar />
-      <PageContainer>
-        <Head></Head>
-        <ImagesContainer>
-          <img src="/img016_edited.jpg" priority={"true"} />
-          <img src="/triangle2.jpg" priority={"true"} />
-          <img src="/img017_edited2.jpg" priority={"true"} />
-        </ImagesContainer>
-        <TextContainer>
-          Professional, creative stained glass studio since 1977 specializing in
-          custom and original design, repair and historic restoration. Call{" "}
-          <span style={{ fontWeight: "bold" }}>(319) 338-5595</span> or email{" "}
-          <span style={{ fontWeight: "bold" }}>
-            thayerglassstudio@gmail.com
-          </span>{" "}
-          for inquiries and appointments.
-        </TextContainer>
-        <NetlifySmallForm />
-        <Copyright />
-      </PageContainer>
+      <Head></Head>
+      <ImagesContainer>
+        <img src="/img016_edited.jpg" priority={"true"} />
+        <img src="/triangle2.jpg" priority={"true"} />
+        <img src="/img017_edited2.jpg" priority={"true"} />
+      </ImagesContainer>
+      <TextContainer>
+        Professional, creative stained glass studio since 1977 specializing in
+        custom and original design, repair and historic restoration. Call{" "}
+        <span style={{ fontWeight: "bold" }}>(319) 338-5595</span> or email{" "}
+        <span style={{ fontWeight: "bold" }}>thayerglassstudio@gmail.com</span>{" "}
+        for inquiries and appointments.
+      </TextContainer>
+      <NetlifySmallForm />
     </>
   );
 }

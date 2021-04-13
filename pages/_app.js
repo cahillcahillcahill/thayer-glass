@@ -1,5 +1,7 @@
 import { createGlobalStyle, ThemeProvider } from "styled-components";
-import Image from "next/image";
+import PageContainer from "@components/PageContainer";
+import NavBar from "@components/NavBar";
+import Copyright from "@components/Copyright";
 
 const GlobalStyle = createGlobalStyle`
 html,
@@ -28,7 +30,11 @@ function Application({ Component, pageProps }) {
     <>
       <GlobalStyle />
       <ThemeProvider theme={theme}>
-        <Component {...pageProps} />
+        <NavBar />
+        <PageContainer>
+          <Component {...pageProps} />
+          <Copyright />
+        </PageContainer>
       </ThemeProvider>
     </>
   );
