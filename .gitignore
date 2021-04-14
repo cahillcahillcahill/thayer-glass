@@ -17,6 +17,7 @@
 
 # misc
 .DS_Store
+fragments.js
 
 # debug
 npm-debug.log*

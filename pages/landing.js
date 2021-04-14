@@ -1,9 +1,6 @@
 import Head from "next/head";
 // import Image from "next/image";
 import styled from "styled-components";
-import PageContainer from "@components/PageContainer";
-import NavBar from "@components/NavBar";
-import Copyright from "@components/Copyright";
 import NetlifySmallForm from "@components/NetlifySmallForm";
 
 const TextContainer = styled.p`
@@ -31,7 +28,10 @@ const TextContainer = styled.p`
 const ImagesContainer = styled.div`
   display: flex;
   justify-content: space-around;
-  column-gap: 2vw;
+
+  & img {
+    margin: 0 1vw;
+  }
 
   & img:nth-child(1) {
     width: 275px;
@@ -45,9 +45,6 @@ const ImagesContainer = styled.div`
     width: 275px;
     height: 375px;
     transform: rotate(0.25deg);
-  }
-
-  & div:nth-child(3) {
   }
 
   @media screen and (max-width: 975px) {
@@ -66,6 +63,10 @@ const ImagesContainer = styled.div`
   }
 
   @media screen and (max-width: 825px) {
+    & img {
+      margin: 10px 0;
+    }
+
     & img:nth-child(1) {
       display: block;
       order: +1;
@@ -87,7 +88,6 @@ const ImagesContainer = styled.div`
       display: flex;
       flex-direction: column;
       align-items: center;
-      row-gap: 10px;
       height: 100%;
     }
   }

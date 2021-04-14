@@ -6,6 +6,10 @@ export default function Home() {
     <>
       <Head>
         <title>Thayer Glass Studio</title>
+        <meta
+          name="keywords"
+          content="stained glass, Iowa stained glass, stained glass art, stained glass artist, midwest art, midwest stained glass, Iowa art, Iowa artist"
+        />
         <link rel="icon" href="/favicon.ico" />
         <link rel="preconnect" href="https://fonts.gstatic.com" />
         <link
